@@ -1,0 +1,284 @@
+
+/*============================================================================= 
+  Base Layout Styles
+   ========================================================================== */
+
+body{
+  background-color: aliceblue;
+  max-width: 1300px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+main{
+  background: white;
+  
+}  
+
+.siteSample,
+li img{
+  max-width: 95%;
+  
+}
+
+ul{
+  padding: 0;
+  
+}
+h2,h3, p,h1,li, h4{
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  padding-left: .5em;
+  padding-right: .5em;
+}
+
+.overview img{
+  max-width: 60%;
+  margin-left: 20%;
+  margin-right: 20%;
+    
+}
+
+.contact{
+    color: dimgray;
+}
+/*============================================================================= 
+  Font
+   ========================================================================== */
+p {
+  font-size: .85em;
+  margin-top: .5em;
+}
+h1 {
+  font-size: 1.5em;
+  margin-bottom: .5em;
+  margin-top: 1em;
+  
+  
+}
+h2{
+  font-size: 1em;
+  margin-bottom: .5em;
+  margin-top: 1em;
+}
+h3{
+  font-size: .85em;
+  margin-bottom: .5em;
+  margin-top: 1em;
+  
+}
+
+
+/*============================================================================= 
+  Media Queries
+   ========================================================================== */
+
+  /*Media Mid Screen
+   ========================================================================== */
+@media only screen and (min-width: 620px){
+  
+  
+    
+  /****************
+    Nav
+  ****************/
+  .main-nav{
+    display: flex; /* changed from inline flex*/
+    flex-direction: column;
+    font-size: 1em;
+    font-weight: bold;
+    margin-bottom: 4em;
+    justify-content: center;/*added justfied content*/
+            
+  }
+  .studentName{
+    font-size: 1.5em;
+          
+  }
+  
+  /****************
+    Profile Section
+  ****************/
+      
+  .aboutMe{
+    color: dimgray;
+    font-size: 1.4em;
+    text-align: left;
+        
+  }
+  
+  .overview {
+    padding-right: 2em;
+    padding-left: 2em;
+                    
+  }
+  
+  /****************
+    Profile Img
+  ****************/
+  img.profileImg{
+    width: 400px;
+    margin-right: auto; 
+    margin-bottom: 4em;
+    
+  }
+  
+  
+/*Portfolio
+ ========================================================================== */
+.wraper{
+    max-width: 1119px;
+    margin-right: 6%;
+    margin-left: 6%;
+    
+  }
+  
+  main{
+    margin: 0;
+    padding-top: 4em;
+  }
+  
+  
+  
+  .portfolio{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+  }
+  
+  .siteSample{    
+    max-width: 331px;
+        
+  }
+  .discerption{
+    display: block;
+    max-width: 331px;
+    color: dimgray;
+  }
+  
+  .overview img{
+    float: right;
+    margin-left: 3em;     
+    
+  }
+  
+  
+  /*Footer
+   ========================================================================== */
+  
+  .contactTitle{
+    color: black;
+    padding-bottom: 1em;
+    font-size: .9em;
+  }
+  
+  .contact{
+    max-width: 35%;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 5em;
+    font-size: 1em;
+   
+    
+  }
+  .main-footer{
+    display: flex;
+    flex-direction: row;
+    font-size: 1em;
+    font-weight: bold;
+    justify-content: flex-end;
+    
+            
+  }
+  .footName{
+    display: flex;
+    flex-direction: row;
+    margin-right: auto;
+    font-size: 1em;
+    align-self: center;
+      
+  }
+ 
+ /* Clearfix
+   ========================================================================== */
+  
+  .clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+    
+  }
+}
+
+
+/*============================================================================= 
+  Media Large Screen
+   ========================================================================== */
+@media only screen and (min-width: 1247px){
+  
+
+
+  
+  /****************************************************
+    Nav
+  *****************************************************/
+  
+  .main-nav{
+    display: flex; 
+    flex-direction: row;
+    margin-right: 2em;
+    margin-top: 2em;
+    align-items: baseline;
+    
+        
+  }
+  .studentName{
+    margin-right: auto;
+    margin-left: 2em;
+    align-items: baseline;
+      }
+  
+  
+  /****************
+    Profile Section
+  ****************/
+  .aboutMe{
+    padding-left: 1em;
+    font-size: 1.8em;
+    
+  }
+  .overview {
+    padding-right: 2em;
+    padding-left: 2em;
+    font-size: 1em;
+                
+  }
+  
+  /*****************************************************
+    Profile Img
+  ******************************************************/
+    
+  .overview img{
+    float: right;
+    margin-left: 3em;     
+    
+  }
+  
+   
+  /*============================================================================= 
+  Footer
+   ========================================================================== */
+   
+  .main-footer{
+    margin-top: 4em;
+    margin-right: 2em;
+                
+  }
+  .footName{
+    margin-left: 2em;
+      }
+  
+  
+  
+  }
