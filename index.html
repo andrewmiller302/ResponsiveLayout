@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta name="viewport" content= "width=device-width, intial-scal=1">
     <meta charset="UTF-8">
     <title>Responsive Layout</title>
     <link rel="stylesheet" type="text/css" href="css/normalize.css"  media="screen"/>
@@ -9,16 +10,19 @@
  </head>  
   <body>
     <header>
-        <ul class="main-nav">
-        <li class="studentName"><a href="index.html">Andrew Miller</a></li>
+      
+      <nav>
+        <ul class= "main-nav">
+        <li class="studentName"><a href="index.html"><h1>Andrew Miller</h1></a></li>
         <li><a href="index.html">HOME</a></li>
         <li><a href="#">PORTFOLIO</a></li>
         <li><a href="#">CONTACT</a></li>
-      </ul>      
+        </ul>
+      </nav>
     </header>
       <div class="overview clearfix">
         <img class= "profileImg" src="Images/responsive-layout-profile.png" alt="porfile_pic">
-        <p class = "aboutMe">Hi! I'm a front-end developer who loves responsive design and css. I recently finshed learning fron-end web development at Treehouse and am excited to put all my skills to use!</p>
+        <p class = "aboutMe">Hi! I'm a front-end developer who loves responsive design and CSS. I recently finished learning Front-End Web development at Treehouse and am excited to put all my skills to use!</p>
       </div>
       <div class="wraper">
         <main >        
@@ -32,7 +36,7 @@
             <li>
               <img class="siteSample" src="Images/portfolio-2.png" alt="search page">
               <h3 class="discerption">Search Page</h3>
-              <p class="discerption">This project searches through a specifc database to find infomration that the user is trying to look up.</p>
+              <p class="discerption">This project searches through a specific database to find information that the user is trying to look up.</p>
             </li>
             <li>
               <img class="siteSample" src="Images/portfolio-3.png" alt="travel app">
@@ -47,19 +51,19 @@
             <li>
               <img class="siteSample" src="Images/portfolio-5.png" alt="photo gallery">
               <h3 class="discerption" >Photo Gallery</h3>
-              <p class="discerption">This project shows pictures from a recent trip to the viewer and allows them to easily navigate through photos</p>
+              <p class="discerption">This project shows pictures from a recent trip to the viewer and allows them to easily navigate through photos.</p>
             </li>
             <li>
               <img class="siteSample" src="Images/portfolio-4.png" alt="calculator">
               <h3 class="discerption" >Calculator</h3>
-              <p class="discerption">someone can enter in the numbers they want and press the big blue button and get the result.</p>
+              <p class="discerption">Someone can enter in the numbers they want and press the big blue button and get the result.</p>
             </li>
           </ul>
         </main>
     </div>
         <div class = "contact">
           <h4 class = "contactTitle">CONTACT</h4>
-          <p>If you're intersted in chating or want more information about what I've been working on, I'd love to hear from you!</p>
+          <p>If you're interested in chatting or want more information about what I've been working on, I'd love to hear from you!</p>
           <p>Phone: <strong>+1(111) 555-1234</strong></p>
           <p>Email: <strong>email@yoursite.com</strong></p>
         </div>
@@ -70,7 +74,11 @@
           <li><a href="index.html">HOME</a></li>
           <li><a href="#">PORTFOLIO</a></li>
           <li><a href="#">CONTACT</a></li>
-        </ul>      
+          </ul>
+        <ul class="mobel-footer">
+        <li><a href="index.html">Andrew Miller</a></li>
+        <li class = "topLink"><a href = "index.html"> BACK TO TOP</a></li>
+        </ul>
       </footer>
   
   </body>

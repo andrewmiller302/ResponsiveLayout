@@ -41,13 +41,37 @@ h2,h3, p,h1,li, h4{
 
 .contact{
     color: dimgray;
+    padding-top: 4em
 }
+
+li{
+  margin-bottom: .5em;
+}
+
+.mobel-footer a{
+  text-decoration: none;
+  font-weight: bold;
+  color: black;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1em;
+  }
+.main-footer{
+  display: none;
+}
+
+.mobel-footer{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 4em;      
+}
+
 /*============================================================================= 
   Font
    ========================================================================== */
 p {
   font-size: .85em;
   margin-top: .5em;
+  
 }
 h1 {
   font-size: 1.5em;
@@ -67,6 +91,14 @@ h3{
   margin-top: 1em;
   
 }
+.main-nav{
+  font-size: .8em;
+  font-weight: bold;
+}
+
+
+  
+
 
 
 /*============================================================================= 
@@ -75,26 +107,32 @@ h3{
 
   /*Media Mid Screen
    ========================================================================== */
-@media only screen and (min-width: 620px){
+@media only screen and (min-width: 768px){
   
   
     
   /****************
     Nav
   ****************/
+  
   .main-nav{
     display: flex; /* changed from inline flex*/
-    flex-direction: column;
+    flex-direction: row;
     font-size: 1em;
     font-weight: bold;
     margin-bottom: 4em;
     justify-content: center;/*added justfied content*/
-            
-  }
-  .studentName{
-    font-size: 1.5em;
+    align-items: center;
+    flex-wrap: wrap;
           
   }
+  
+  .studentName {
+    flex-basis: 100%;
+  }  
+  
+   
+  
   
   /****************
     Profile Section
@@ -167,6 +205,11 @@ h3{
   /*Footer
    ========================================================================== */
   
+.mobel-footer{
+  display: none;
+    
+}
+  
   .contactTitle{
     color: black;
     padding-bottom: 1em;
@@ -215,10 +258,8 @@ h3{
 /*============================================================================= 
   Media Large Screen
    ========================================================================== */
-@media only screen and (min-width: 1247px){
+@media only screen and (min-width: 1024px){
   
-
-
   
   /****************************************************
     Nav
@@ -229,15 +270,14 @@ h3{
     flex-direction: row;
     margin-right: 2em;
     margin-top: 2em;
-    align-items: baseline;
-    
-        
+    justify-content: flex-end;
+            
   }
   .studentName{
     margin-right: auto;
-    margin-left: 2em;
-    align-items: baseline;
-      }
+    flex-basis: auto;
+    
+    }
   
   
   /****************
