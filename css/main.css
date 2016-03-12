@@ -3,6 +3,11 @@
   Base Layout Styles
    ========================================================================== */
 
+*{
+  box-sizing: border-box;
+  
+}
+
 body{
   background-color: aliceblue;
   max-width: 1300px;
@@ -10,10 +15,52 @@ body{
   margin-left: auto;
 }
 
+h2,h1,li, h4{
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  
+}
+
+li{
+  margin-bottom: .5em;
+}
+
+/****************
+    Profile Section
+  ****************/
+.overview{
+  text-align: center;
+  color: darkgray;
+  font-size: 1.2em;
+}
+
+.overview img{
+  width: 80%;
+  display: block;
+  margin: 0 auto;
+  padding-top: 3em;
+  padding-bottom: 3em;
+      
+}
+
+/*Portfolio
+ ========================================================================== */
+
 main{
   background: white;
-  
+  padding-top: 4em;
+    
 }  
+
+.portfolio{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: row;
+    padding: 0 .5em 4em .5em;
+    margin-top: 4em;
+        
+  }
 
 .siteSample,
 li img{
@@ -21,32 +68,18 @@ li img{
   
 }
 
-ul{
-  padding: 0;
-  
-}
-h2,h3, p,h1,li, h4{
-  text-align: center;
-  font-family: 'Roboto', sans-serif;
-  padding-left: .5em;
-  padding-right: .5em;
-}
 
-.overview img{
-  max-width: 60%;
-  margin-left: 20%;
-  margin-right: 20%;
-    
-}
+/*Footer
+   ========================================================================== */
 
 .contact{
-    color: dimgray;
-    padding-top: 4em
+  color: dimgray;
+  padding: 1em .5em 1em .5em;
+  margin-bottom: 3em;
+  text-align: center;
+      
 }
 
-li{
-  margin-bottom: .5em;
-}
 
 .mobel-footer a{
   text-decoration: none;
@@ -62,7 +95,8 @@ li{
 .mobel-footer{
   display: flex;
   justify-content: space-between;
-  margin-top: 4em;      
+  margin-top: 4em;
+  padding: 0 .5em 0 .5em;
 }
 
 /*============================================================================= 
@@ -71,6 +105,7 @@ li{
 p {
   font-size: .85em;
   margin-top: .5em;
+  width: inherit
   
 }
 h1 {
@@ -89,11 +124,13 @@ h3{
   font-size: .85em;
   margin-bottom: .5em;
   margin-top: 1em;
+  width: inherit;
   
 }
 .main-nav{
   font-size: .8em;
   font-weight: bold;
+  padding: 0;
 }
 
 
@@ -131,7 +168,9 @@ h3{
     flex-basis: 100%;
   }  
   
-   
+  .main-nav a {
+    padding: 0 1em;
+  }
   
   
   /****************
@@ -140,65 +179,56 @@ h3{
       
   .aboutMe{
     color: dimgray;
-    font-size: 1.4em;
+    font-size: 1em;
     text-align: left;
-        
+    padding: 0 0 0 1em;
+            
   }
   
-  .overview {
-    padding-right: 2em;
-    padding-left: 2em;
-                    
-  }
   
   /****************
     Profile Img
   ****************/
   img.profileImg{
-    width: 400px;
-    margin-right: auto; 
+    width: 45%;
     margin-bottom: 4em;
+    display: inline;
+    padding: 0 1em;
     
   }
   
-  
+    
 /*Portfolio
  ========================================================================== */
 .wraper{
     max-width: 1119px;
     margin-right: 6%;
     margin-left: 6%;
-    
+        
   }
   
   main{
     margin: 0;
     padding-top: 4em;
-  }
-  
-  
-  
-  .portfolio{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
     
   }
-  
-  .siteSample{    
-    max-width: 331px;
-        
+    
+  .portfolio li,
+  .portfolio img{ /*this is what i targeted to start to fix gallery */
+    min-width: 260px;
+    max-width: 25%;
+    
+      
   }
-  .discerption{
-    display: block;
-    max-width: 331px;
-    color: dimgray;
+ 
+  .list{
+    margin-right: 1em;
+    margin-left: 1em;
   }
   
   .overview img{
     float: right;
-    margin-left: 3em;     
-    
+       
   }
   
   
@@ -213,11 +243,11 @@ h3{
   .contactTitle{
     color: black;
     padding-bottom: 1em;
-    font-size: .9em;
+    font-size: 1em;
   }
   
   .contact{
-    max-width: 35%;
+    max-width: 70%;
     margin-right: auto;
     margin-left: auto;
     margin-top: 5em;
@@ -234,6 +264,12 @@ h3{
     
             
   }
+  
+  .main-footer a{
+    padding: 0 1em;
+    
+  }
+  
   .footName{
     display: flex;
     flex-direction: row;
@@ -243,6 +279,8 @@ h3{
       
   }
  
+  
+  
  /* Clearfix
    ========================================================================== */
   
@@ -269,6 +307,7 @@ h3{
     display: flex; 
     flex-direction: row;
     margin-right: 2em;
+    margin-left: 2em;
     margin-top: 2em;
     justify-content: flex-end;
             
@@ -276,6 +315,7 @@ h3{
   .studentName{
     margin-right: auto;
     flex-basis: auto;
+    padding: 0 1em;
     
     }
   
@@ -285,8 +325,7 @@ h3{
   ****************/
   .aboutMe{
     padding-left: 1em;
-    font-size: 1.8em;
-    
+       
   }
   .overview {
     padding-right: 2em;
@@ -295,14 +334,21 @@ h3{
                 
   }
   
+  .portfolio{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: row;
+    padding: 0 0 4em 0;
+  }
+  
   /*****************************************************
     Profile Img
   ******************************************************/
     
   .overview img{
     float: right;
-    margin-left: 3em;     
-    
+        
   }
   
    
@@ -310,6 +356,11 @@ h3{
   Footer
    ========================================================================== */
    
+  .contact{
+    max-width: 60%;
+      
+  }
+  
   .main-footer{
     margin-top: 4em;
     margin-right: 2em;
@@ -319,6 +370,5 @@ h3{
     margin-left: 2em;
       }
   
-  
-  
+    
   }
